@@ -1,0 +1,48 @@
+$source-font-path: "../fonts/source/" !default;
+
+@font-face {
+    font-family: "Source";
+    src: url("#{$source-font-path}sourcesanspro-extralight-webfont.woff2") format("woff2"),
+        url("#{$source-font-path}sourcesanspro-extralight-webfont.woff") format("woff"),
+        url("#{$source-font-path}sourcesanspro-extralight-webfont.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Source";
+    src: url("#{$source-font-path}sourcesanspro-light-webfont.woff2") format("woff2"),
+        url("#{$source-font-path}sourcesanspro-light-webfont.woff") format("woff"),
+        url("#{$source-font-path}sourcesanspro-light-webfont.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Source";
+    src: url("#{$source-font-path}sourcesanspro-regular-webfont.woff2") format("woff2"),
+        url("#{$source-font-path}sourcesanspro-regular-webfont.woff") format("woff"),
+        url("#{$source-font-path}sourcesanspro-regular-webfont.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Source";
+    src: url("#{$source-font-path}sourcesanspro-semibold-webfont.woff2") format("woff2"),
+        url("#{$source-font-path}sourcesanspro-semibold-webfont.woff") format("woff"),
+        url("#{$source-font-path}sourcesanspro-semibold-webfont.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Source";
+    src: url("#{$source-font-path}sourcesanspro-bold-webfont.woff2") format("woff2"),
+        url("#{$source-font-path}sourcesanspro-bold-webfont.woff") format("woff"),
+        url("#{$source-font-path}sourcesanspro-bold-webfont.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Source";
+    src: url("#{$source-font-path}sourcesanspro-black-webfont.woff2") format("woff2"),
+        url("#{$source-font-path}sourcesanspro-black-webfont.woff") format("woff"),
+        url("#{$source-font-path}sourcesanspro-black-webfont.ttf") format("truetype");
+    font-weight: 800;
+}

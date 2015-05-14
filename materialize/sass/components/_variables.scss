@@ -1,0 +1,237 @@
+/*** Text ***/
+$text-size:				11px;
+$text-icon-size:			16px;
+$text-line-height:			1em;
+$text-font:				"Droid",sans-serif;
+$text-weigth:				normal;
+$text-strong-weigth:		500;
+$text-light-weigth:			300;
+$text-thin-weigth:			200;
+
+$p-margin-bottom:		5px;
+
+/*** Header ***/
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;
+
+$h-weigth:				normal;
+$h-line-height-scale:		1.1;
+$h-margin-top-scale:		0.5;
+$h-margin-bottom-scale:	0.4;
+
+
+
+/*** Colors ***/
+$theme-light: false !default;
+$theme-dark: true !default;
+
+@if $theme-dark
+{
+	$primary-color: 			$gray25 !default;
+	$primary-color-light: 		$gray40 !default;
+	$primary-color-dark: 		$gray20 !default;
+
+	$secondary-color: 			color("grey","base")  	  !default;
+	$secondary-color-light: 	color("grey","lighten-2") !default;
+	$secondary-color-dark: 		color("grey","darken-2")  !default;
+
+	$terciary-color: 		color("orange","base")  !default;
+	$terciary-color-light: 	color("orange","lighten-3") !default;
+	$terciary-color-dark: 	color("orange","darken-4")  !default;
+	
+	$text-color-primary:		#fff !default;
+	$text-color-secondary:		#222 !default;
+	$text-color-terciary:		#fff !default;
+
+}
+
+@if $theme-light
+{
+	$primary-color: 			$gray80 !default;
+	$primary-color-light: 		$gray90 !default;
+	$primary-color-dark: 		$gray50 !default;
+
+	$secondary-color: 			color("grey","lighten-4")  	  !default;
+	$secondary-color-light: 	color("grey","lighten-3") !default;
+	$secondary-color-dark: 		color("grey","lighten-2")  !default;
+
+	$terciary-color: 		color("blue","base")  !default;
+	$terciary-color-light: 	color("blue","lighten-3") !default;
+	$terciary-color-dark: 	color("blue","darken-4")  !default;
+	
+	$text-color-primary:		#000 !default;
+	$text-color-secondary:		#333 !default;
+	$text-color-terciary:		#fff !default;
+
+	
+}
+
+.color1 		{ background-color: $primary-color !important; }
+.color1-light 	{ background-color: $primary-color-light !important; }
+.color1-dark 	{ background-color: $primary-color-dark !important; }
+.color2 		{ background-color: $secondary-color !important; }
+.color2-light 	{ background-color: $secondary-color-light !important; }
+.color2-dark 	{ background-color: $secondary-color-dark !important; }
+.color3 		{ background-color: $terciary-color !important; }
+.color3-light 	{ background-color: $terciary-color-light !important; }
+.color3-dark 	{ background-color: $terciary-color-dark !important; }
+
+.color1-text 		{ color: $primary-color !important; }
+.color1-light-text 	{ color: $primary-color-light !important; }
+.color1-dark-text 	{ color: $primary-color-dark !important; }
+.color2-text 		{ color: $secondary-color !important; }
+.color2-light-text 	{ color: $secondary-color-light !important; }
+.color2-dark-text 	{ color: $secondary-color-dark !important; }
+.color3-text 		{ color: $terciary-color !important; }
+.color3-light-text 	{ color: $terciary-color-light !important; }
+.color3-dark-text 	{ color: $terciary-color-dark !important; }
+
+.color1-border 			{ border-color: $primary-color !important; }
+.color1-light-border 	{ border-color: $primary-color-light !important; }
+.color1-dark-border 	{ border-color: $primary-color-dark !important; }
+.color2-border 			{ border-color: $secondary-color !important; }
+.color2-light-border 	{ border-color: $secondary-color-light !important; }
+.color2-dark-border 	{ border-color: $secondary-color-dark !important; }
+.color3-border 			{ border-color: $terciary-color !important; }
+.color3-light-border 	{ border-color: $terciary-color-light !important; }
+.color3-dark-border 	{ border-color: $terciary-color-dark !important; }
+
+
+$success-color: 			$green25  !default;
+$error-color: 			$red25    !default;
+$link-color: 				$yellow50  !default;
+
+/*** Badges ***/
+$badge-bg-color: $secondary-color !default;
+
+/*** Buttons ***/
+$button-bg-color-disabled: 	#DFDFDF !default;
+$button-color: 			$secondary-color-dark !default;
+$button-color-disabled: 	#9F9F9F !default;
+$button-color-flat: 		#343434 !default;
+$button-color-raised: 		$text-color-terciary !default;
+$button-floating-size: 		18px !default;
+$button-height: 			1.5rem !default;
+$button-font-size-shared: 	0.25rem !default;
+$button-line-height: 		1.6rem !default;
+
+
+/*** Cards ***/
+$card-padding: 20px !default;
+$card-bg-color: #fff !default;
+
+/*** Collapsible ***/
+$collapsible-height: 2.1rem !default;
+$collapsible-header-color: $secondary-color-dark !default;
+$collapsible-border-color: $primary-color-dark !default;
+$collapsible-body-indent: 10px;
+
+/*** Dropdown ***/
+$dropdown-color: $secondary-color-dark !default;
+
+/*** Fonts ***/
+
+
+
+
+/*** Forms ***/
+// Text Inputs + Textarea
+$input-border-color: 		$gray50 !default;
+$input-error-color: 		$error-color !default;
+$input-success-color: 		$success-color !default;
+$input-focus-color: 		$secondary-color !default;
+$label-font-size: 			0.8rem !default;
+$input-disabled-color: 		rgba(255,255,255, .1) !default;
+$input-disabled-solid-color: #444444 !default;
+
+//Toggles (Radio/Checkbox
+$toggle-label-color: $text-color-primary !default;
+
+// Radio Buttons
+$radio-fill-color: 		$terciary-color !default;
+$radio-empty-color: 	$secondary-color-dark !default;
+
+// Switches
+$switch-bg-color: $secondary-color !default;
+$switch-checked-lever-bg: $secondary-color-light !default;
+$switch-unchecked-bg: #F1F1F1 !default;
+$switch-unchecked-lever-bg: #818181 !default;
+
+// Date Picker
+$datepicker-weekday-bg: $secondary-color-dark !default;
+$datepicker-date-bg: $secondary-color !default;
+$datepicker-year: rgba(255, 255, 255, .4) !default;
+$datepicker-focus: rgba(0,0,0, .05) !default;
+$datepicker-selected: $secondary-color !default;
+$datepicker-selected-outfocus: $secondary-color-light !default;
+
+
+/*** Global ***/
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+// Grid Variables
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+/*** Navbar ***/
+$navbar-height: 30px !default;
+$navbar-height-mobile: 29px !default;
+$navbar-background-color: $terciary-color;
+
+
+/*** SideNav ***/
+
+
+
+/*** Tabs ***/
+$tabs-underline-color: $terciary-color !default;
+$tabs-text-color: $button-color-raised !default;
+$tabs-text-hover-color: $terciary-color !default;
+$tabs-bg-color: $secondary-color-dark !default;
+
+/*** Tables ***/
+$table-border-color: #d0d0d0 !default;
+$table-striped-color: #f2f2f2 !default;
+
+/*** Toasts ***/
+$toast-height: 48px !default;
+$toast-color: #323232 !default;
+$toast-text-color: #fff !default;
+
+// Footer
+$footer-bg-color: $primary-color-light !default;
+
+// Flowtext
+$range : $large-screen - $small-screen !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default;
+
+/*** Collections ***/
+$collection-border-color: #e0e0e0 !default;
+$collection-bg-color: #fff !default;
+$collection-active-bg-color: $secondary-color !default;
+$collection-active-color: $secondary-color-light !default;
+$collection-hover-bg-color: #ddd !default;
+
+/* Progress Bar */
+$progress-bar-bg-color: $secondary-color-dark !default;
+$progress-bar-color: 	 $terciary-color !default;
